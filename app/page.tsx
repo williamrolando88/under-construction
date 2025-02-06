@@ -1,9 +1,9 @@
 'use client';
 
-import { Timer, Mail, Github, Twitter, Linkedin } from 'lucide-react';
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Linkedin, Mail, Timer, Twitter } from 'lucide-react';
+import { useState } from 'react';
 import { toast } from 'sonner';
 
 export default function Home() {
@@ -74,11 +74,6 @@ export default function Home() {
 
         {/* Social Links */}
         <div className="flex justify-center gap-4 pt-8">
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5" />
-            </a>
-          </Button>
           <Button variant="ghost" size="icon" asChild>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <Twitter className="w-5 h-5" />
